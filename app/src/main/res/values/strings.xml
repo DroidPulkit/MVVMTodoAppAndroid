@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVVMTodo</string>
+    <string name="FAB_text">Click here to add a task</string>
+    <string name="task_name">Task Name</string>
 </resources>
