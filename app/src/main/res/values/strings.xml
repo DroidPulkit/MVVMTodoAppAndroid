@@ -2,4 +2,10 @@
     <string name="app_name">MVVMTodo</string>
     <string name="FAB_text">Click here to add a task</string>
     <string name="task_name">Task Name</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="action_sort_by_date_created">action sort by date created</string>
+    <string name="hide_completed">Hide Completed</string>
+    <string name="delete_all_completed">delete all completed</string>
 </resources>
