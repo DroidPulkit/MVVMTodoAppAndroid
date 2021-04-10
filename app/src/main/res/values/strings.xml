@@ -4,8 +4,8 @@
     <string name="task_name">Task Name</string>
     <string name="search">Search</string>
     <string name="sort">Sort</string>
-    <string name="sort_by_name">Sort by name</string>
-    <string name="action_sort_by_date_created">action sort by date created</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="action_sort_by_date_created">Sort By Date Created</string>
     <string name="hide_completed">Hide Completed</string>
-    <string name="delete_all_completed">delete all completed</string>
+    <string name="delete_all_completed">Delete All Completed</string>
 </resources>

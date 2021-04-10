@@ -5,7 +5,6 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.codinginflow.mvvmtodo.di.ApplicationScope
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Provider
@@ -13,7 +12,7 @@ import javax.inject.Provider
 @Database(entities = [Task::class], version = 1)
 abstract class TaskDatabase : RoomDatabase() {
 
-    abstract fun taskDao() : TaskDao
+    abstract fun taskDao(): TaskDao
 
     class Callback @Inject constructor(
         private val database: Provider<TaskDatabase>,
@@ -27,12 +26,12 @@ abstract class TaskDatabase : RoomDatabase() {
             val dao = database.get().taskDao()
 
             applicationScope.launch {
-                dao.insert(Task("Test 1", isImportant = true))
-                dao.insert(Task("Test 2", isCompleted = true))
-                dao.insert(Task("Test 3"))
-                dao.insert(Task("Test 4"))
-                dao.insert(Task("Test 5"))
-                dao.insert(Task("Test 6", isCompleted = true, isImportant = true))
+                dao.insert(Task("Work on project", isImportant = true))
+                dao.insert(Task("Buy eggs", isCompleted = true))
+                dao.insert(Task("Complete the assignment"))
+                dao.insert(Task("Project on random project"))
+                dao.insert(Task("123 abc"))
+                dao.insert(Task("Does it works?", isCompleted = true, isImportant = true))
             }
 
         }
